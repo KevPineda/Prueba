@@ -5,13 +5,7 @@ use App\Http\Controllers\PublicacionesController;
 use App\Http\Controllers\RequestPublicacionesController;
 use App\Http\Controllers\AdminController;
 
-route::get('/', function (){
-    return view('welcome');
-
-});
-
-
-Route::get('/listado', [PublicacionesController::class, 'listado'])->name('listado');
+Route::get('/', [PublicacionesController::class, 'listado'])->name('listado');
 Route::post('/publicaciones', [RequestPublicacionesController::class, 'store'])->name('publicaciones.store');
 
 Route::get('/login',   [AdminController::class, 'showLogin'])->name('login');
