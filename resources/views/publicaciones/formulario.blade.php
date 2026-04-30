@@ -108,7 +108,7 @@
     <div class="card">
         <h2>Nueva publicación</h2>
 
-        <div id="mensaje-ok">✅ ¡Publicación guardada correctamente!</div>
+        <div id="mensaje-ok" style="display:none; color:green;" >✅ ¡Publicación guardada correctamente!</div>
 
         <div>
             <label>Título *</label>
